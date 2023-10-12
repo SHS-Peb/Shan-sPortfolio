@@ -1,0 +1,49 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute center;
+}
+
+.bg {
+    position: absolute center;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    height: 100vh;
+}
+
+.introContent {
+    height: 200vh;
+    width: 200vw;
+    padding: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:840px) {
+    .bg {
+        right: -10vw
+    }
+    .introContent {
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .bg {
+        right: -20vw
+    }
+}
